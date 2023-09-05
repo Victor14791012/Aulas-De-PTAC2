@@ -1,0 +1,15 @@
+body {
+    background-image: url('src/Todo/fundo-jogador-1.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+#transparente {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 2%;
+}
+
+#card-meu{
+    
+    border-radius: 2%;
+}
