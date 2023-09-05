@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 import './todo.css';
 
 export default function ToDo() {
@@ -13,6 +15,14 @@ export default function ToDo() {
 
     const salvar = (e) => {
         e.preventDefault();
+
+        
+        // Verifica se todos os campos estão preenchidos
+       /* if (!atividade || !descricao || !forca || !imagem) {
+            alert("Por favor, preencha todos os campos antes de adicionar.");
+            return;
+        } */
+
         setLista([...Lista, {
             atividade: atividade,
             descricao: descricao,
@@ -25,7 +35,7 @@ export default function ToDo() {
         setDescricao("");
         setForca("");
         setImagem("");
-    };
+    };                 
 
     const deletar = (idToDelete) => {
         const novaLista = Lista.filter((ativ) => ativ.id !== idToDelete);
@@ -33,7 +43,7 @@ export default function ToDo() {
     };
 
     return (   
-        <div className="container" id="transparente">
+        <div className="container " id="transparente">
             <Link to="/home">Home</Link> 
             <div className="bg-white rounded-2 p-2">
                 <h1>Portal Geek</h1>  
@@ -49,7 +59,7 @@ export default function ToDo() {
                         <input type="text" className="form-control" id="descricao" value={descricao} onChange={(e) => setDescricao(e.target.value)} />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="forca" className="form-label">Força (personagem)</label>
+                        <label htmlFor="forca" className="form-label  ">Força (personagem)</label>
                         <input type="text" className="form-control" id="forca" value={forca} onChange={(e) => setForca(e.target.value)} />
                     </div>
                     <div className="mb-3">
@@ -63,13 +73,18 @@ export default function ToDo() {
             <div className="row m-2">
                 {Lista.map((ativ) => (
                     <div key={ativ.id} className="col-md-4">
-                        <div className="card mb-4" id="card-meu">
+                        <div className="card-jogo mb-4 zoom shadow-lg " id="card-meu">
                             <img src={ativ.imagem && URL.createObjectURL(ativ.imagem)} className="card-img-top" alt="Imagem" />
                             <div className="card-body">
                                 <h5 className="card-title">{ativ.atividade}</h5>
-                                <p className="card-text">Descrição: {ativ.descricao}</p>
-                                <p className="card-text">Força: {ativ.forca}</p> {/* Correção aqui */}
-                                <button className="btn btn-danger" onClick={() => deletar(ativ.id)}>DEL</button>
+                                <h6 className="card-text">Descrição: {ativ.descricao}</h6>
+                                <p className="card-text forca-destaque ">Força: {ativ.forca}  </p>
+                                <button className=" btn btn-danger butao float-right" onClick={() => deletar(ativ.id)}>
+                                <i className="bi bi-trash"></i> DEL
+                                </button>
+
+                                
+
                             </div>
                         </div>
                     </div>
