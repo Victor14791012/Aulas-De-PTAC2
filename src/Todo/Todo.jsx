@@ -41,6 +41,8 @@ export default function ToDo() {
         if (novaAtividade.imagem) {
             localStorage.setItem(`imagem_${novaAtividade.id}`, novaAtividade.imagem);
         }
+        console.log(novaAtividade)
+        console.log(Lista)
     };
 
     // Função para excluir uma atividade da lista
@@ -69,7 +71,8 @@ export default function ToDo() {
 
     return (   
         <div className="container" id="transparente">
-            <Link to="/">Home</Link> 
+            <Link to="/" className="m-2">Home</Link> 
+            <Link to="/detalhe">Detalhe</Link> 
             <div className="bg-dark text-white rounded-2 p-2">
                 <h1>Portal Geek</h1>  
                 <h6>Adicione seus personagens favoritos</h6>
