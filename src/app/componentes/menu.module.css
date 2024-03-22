@@ -1,0 +1,47 @@
+.cabecalho{
+    display: flex;
+    height: auto;
+    background-color: rgb(213, 251, 0);
+}
+
+
+.cabecalho img{
+    padding: 10px;
+}
+
+.cabecalho a:link {
+    text-decoration: aqua;
+    color: black;
+    font-size: 25px;
+   }
+   
+.cabecalho a:hover {
+    text-decoration: white;
+    color: rgb(123, 60, 39);
+   }
+   
+.pagina{
+    display: flex;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.cabecalhoMacarrao{
+    display: flex;
+    height: auto;
+    background-color: rgb(241, 213, 142);
+}
+
+.cabecalhoMacarrao a:link {
+    text-decoration: aqua;
+    color: black;
+    font-size: 25px;
+   }
+   
+   .cabecalhoMacarrao a:hover {
+    text-decoration: white;
+    color: rgb(123, 60, 39);
+   }

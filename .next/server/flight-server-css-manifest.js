@@ -1,0 +1,28 @@
+self.__RSC_CSS_MANIFEST={
+  "cssImports": {
+    "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\layout.js": [
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\componentes\\menu.module.css",
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\node_modules\\bootstrap\\dist\\css\\bootstrap.min.css"
+    ],
+    "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\not-found.js": [
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\componentes\\menu.module.css"
+    ],
+    "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\localizacao\\page.js": [
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\componentes\\menu.module.css"
+    ]
+  },
+  "cssModules": {
+    "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\page": [
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\componentes\\menu.module.css",
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\node_modules\\bootstrap\\dist\\css\\bootstrap.min.css"
+    ],
+    "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\registro\\page": [
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\componentes\\menu.module.css",
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\node_modules\\bootstrap\\dist\\css\\bootstrap.min.css"
+    ],
+    "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\localizacao\\page": [
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\src\\app\\componentes\\menu.module.css",
+      "D:\\5°Semestre\\Marcelino\\PTAC-3-AULA02\\node_modules\\bootstrap\\dist\\css\\bootstrap.min.css"
+    ]
+  }
+}
